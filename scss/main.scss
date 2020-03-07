@@ -1,5 +1,27 @@
+@import "./layout/color";
+@import "./layout/base";
 @import "./layout/fonts";
-@import url("/css/normalize.css");
+@import "./layout/normalize";
+
+@import "./blocks/benefits";
+@import "./blocks/btn";
+@import "./blocks/composition";
+@import "./blocks/contacts";
+@import "./blocks/feature";
+@import "./blocks/features";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/logo";
+@import "./blocks/map";
+@import "./blocks/menu";
+@import "./blocks/nav";
+@import "./blocks/order";
+@import "./blocks/review";
+@import "./blocks/reviews";
+@import "./blocks/section";
+@import "./blocks/switch-controls";
+@import "./blocks/team";
+@import "./blocks/work";
 
 main {
   padding: 10px;

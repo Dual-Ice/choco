@@ -1,0 +1,31 @@
+.hero {
+  background:  #86c3d7 url("../images/content/bg/hero_leaf.png") right bottom / contain no-repeat;
+  color: $white;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+}
+
+.hero__content-wrap {
+  flex: 1;
+}
+
+.hero__desc {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  margin-bottom: 65px;
+}
+
+.hero__text {
+  margin-top: 110px;
+}

@@ -1,0 +1,38 @@
+.features {
+  background: url("../images/content/bg/feature_leaf.png") left center no-repeat;
+}
+
+.features__text {
+  margin-bottom: 55px;
+}
+
+.features__desc {
+  text-align: center;
+  font-size: 18px;
+  color: $grey;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  width: calc(100% / 3 - 53px);
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url("../images/icons/other/dots.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    left: 250px;
+    position: absolute;
+  }
+
+  &:last-child:after {
+    content: "";
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+.btn {
+  background: $white;
+  text-transform: uppercase;
+  border-radius: 29px;
+  font-size: 19px;
+  color: $green;
+  font-weight: 800;
+  padding: 15px 30px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.btn--green {
+  background: $green;
+  color: $white;
+}

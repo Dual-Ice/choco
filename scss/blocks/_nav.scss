@@ -1,0 +1,16 @@
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  font-size: 18px;
+  font-weight: 400;
+}

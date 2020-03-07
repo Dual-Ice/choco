@@ -1,0 +1,44 @@
+.review {
+  background: #f8faf9 url("../images/content/leaves/6.png") right top no-repeat;
+  padding: 52px 0 34px 46px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 90px;
+    height: 45px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
+.review__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.review__text {
+  color: $grey;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.review__user {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.review__avatar {
+  width: 255px;
+  margin-right: 20px;
+}
+
+.review__details {
+  width: 50%;
+}

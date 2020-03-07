@@ -1,0 +1,32 @@
+.feature__item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__item-details {
+  text-align: center;
+}
+
+.feature__title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.feature__text {
+  color: $grey;
+}
+
+.feature__item-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+

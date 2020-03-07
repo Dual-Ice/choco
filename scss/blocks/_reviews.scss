@@ -1,0 +1,30 @@
+.reviews {
+  background: url("../images/content/berries/6.png") right top no-repeat;
+}
+
+.reviews__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews__item--selected {
+  .reviews__item-avatar {
+    border: 6px solid $green;
+  }
+}
+
+.reviews__item-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
