@@ -47,13 +47,14 @@ p {
 
 .wrapper {
   position: relative;
-  width: 100%;
+  // width: 100%;
   min-width: 940px + 25px;
   min-height: 100vh;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 98%;
+  max-width: 940px;
   margin: 0 auto;
 }

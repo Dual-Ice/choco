@@ -1,9 +1,27 @@
 .features {
-  background: url("../images/content/bg/feature_leaf.png") left center no-repeat;
+  background: url("../images/content/bg/feature_leaf.png") left 55% no-repeat;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url("../images/content/berries/3.png") no-repeat;
+    height: 315px;
+    width: 161px;
+    position: absolute;
+    bottom: -110px;
+    left: -80px;
+  }
 }
 
 .features__text {
-  margin-bottom: 55px;
+  margin-bottom: 65px;
 }
 
 .features__desc {
@@ -24,15 +42,15 @@
   &:after {
     content: "";
     background: url("../images/icons/other/dots.png") no-repeat;
-    height: 100%;
-    width: 100%;
-    top: 50px;
-    left: 250px;
+    width: 68px;
+    height: 22px;
+    top: 25%;
+    right: -75px;
+    transform: translateY(-50%);
     position: absolute;
   }
 
   &:last-child:after {
-    content: "";
     display: none;
   }
 }

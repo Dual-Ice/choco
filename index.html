@@ -48,36 +48,36 @@
         <div class="hero__content">
           <div class="hero__content-wrap">
             <div class="hero__text">
-              <h2 class="section__title">Натуральные шоколадные батончики</h2>
-              <div class="hero__desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
+              <h2 class="section__title hero__title">Натуральные шоколадные батончики</h2>
+              <div class="hero__desc">Наши батончики идеально подходят для <br> тех, кто следит за своим здоровьем</div>
               <div class="hero__button">
                 <a href="#" class="btn">Заказать</a>
               </div>
             </div>
             <div class="benefits">
               <ul class="benefits__list">
-                <li class="benefits__item">
-                  <div class="benefits__item-wrap">
-                    <div class="benefits__img">
+                <li class="benefits__item benefit">
+                  <div class="benefit__wrap">
+                    <div class="benefit__img">
                       <img src="images/icons/benefits/natural.png" alt="">
                     </div>
-                    <div class="benefits__text">100% натуральный продукт</div>
+                    <div class="benefit__text">100% натуральный продукт</div>
                   </div>
                 </li>
-                <li class="benefits__item">
-                  <div class="benefits__item-wrap">
-                    <div class="benefits__img">
+                <li class="benefits__item benefit">
+                  <div class="benefit__wrap">
+                    <div class="benefit__img">
                       <img src="images/icons/benefits/delivery.png" alt="">
                     </div>
-                    <div class="benefits__text">3-5 дней доставка по РФ</div>
+                    <div class="benefit__text">3-5 дней доставка по РФ</div>
                   </div>
                 </li>
-                <li class="benefits__item">
-                  <div class="benefits__item-wrap">
-                    <div class="benefits__img">
+                <li class="benefits__item benefit">
+                  <div class="benefit__wrap">
+                    <div class="benefit__img">
                       <img src="images/icons/benefits/figure.png" alt="">
                     </div>
-                    <div class="benefits__text">Не портит фигуру</div>
+                    <div class="benefit__text">Не портит фигуру</div>
                   </div>
                 </li>
               </ul>
@@ -88,7 +88,7 @@
       </div>
     </section>
     <section class="section features">
-      <div class="container">
+      <div class="container features__container">
         <div class="features__text">
           <h2 class="section__title section__title--centered">Почему choco?</h2>
           <div class="features__desc">
@@ -139,13 +139,17 @@
       </div>
     </section>
 
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+
     <section class="section reviews">
-      <div class="container">
+      <div class="container reviews__container">
         <h2 class="section__title section__title--centered">Отзывы</h2>
         <div class="reviews__wrapper">
           <div class="review">
             <div class="review__avatar">
-              <img src="images/content/reviews/photo1.jpg" alt="">
+              <img class="review__avatar-img" src="images/content/reviews/photo1.jpg" alt="">
             </div>
             <article class="review__details">
               <h3 class="review__title">Лучший перекус</h3>
@@ -158,17 +162,17 @@
           <ul class="reviews__list">
             <li class="reviews__item reviews__item--selected">
               <div class="reviews__item-avatar">
-                <img src="images/content/reviews/photo1.jpg" alt="">
+                <img class="reviews__item-img" src="images/content/reviews/photo1.jpg" alt="">
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__item-avatar">
-                <img src="images/content/reviews/photo2.jpg" alt="">
+                <img class="reviews__item-img" src="images/content/reviews/photo2.jpg" alt="">
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__item-avatar">
-                <img src="images/content/reviews/photo3.jpg" alt="">
+                <img class="reviews__item-img" src="images/content/reviews/photo3.jpg" alt="">
               </div>
             </li>
           </ul>
@@ -176,6 +180,7 @@
       </div>
     </section>
 
+    <section class="section"></section>
     <section class="section order">
       <div class="container">
         <h2 class="section__title section__title--centered section__title--green">Закажите доставку</h2>
@@ -222,7 +227,7 @@
                 <div class="order__form-row">
                   <label class="order__form-block">
                     <div class="order__block-title">Комментарий</div>
-                    <textarea rows="8" class="order__form-input"></textarea>
+                    <textarea rows="7" class="order__form-input order__form-textarea"></textarea>
                   </label>
                 </div>
                 <div class="order__form-switches">
@@ -248,11 +253,10 @@
               </div>
             </div>
             <div class="order__form-row">
-              <div class="order__form-col"></div>
               <div class="order__form-col">
-                <div class="order_form-buttons">
+                <div class="order__form-buttons">
                   <button class="btn btn--green">Заказать</button>
-                  <button class="btn">Очистить</button>
+                  <button class="btn btn--transparent btn--reset"><span>Очистить</span></button>
                 </div>
               </div>
             </div>
@@ -260,6 +264,7 @@
         </form>
       </div>
     </section>
+    <section class="section"></section>
   </div>
 </body>
 </html>
