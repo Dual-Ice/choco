@@ -2,6 +2,13 @@
   background: #d2ddd9 url("../images/content/bg/order_pattern.png") center center / cover no-repeat;
 }
 
+.order__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .order__form-wrap {
   display: flex;
   color: $green;

@@ -56,6 +56,9 @@ p {
   width: 98%;
   max-width: 940px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @font-face {
@@ -500,6 +503,7 @@ template {
 }
 
 .benefits__item {
+  width: calc(100% / 3 - 30px);
   margin-right: 47px;
 }
 .benefits__item:last-child {
@@ -640,7 +644,6 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
 }
 
 .hero {
@@ -692,7 +695,7 @@ template {
 }
 
 .hero__text {
-  margin-top: 120px;
+  margin-top: 95px;
 }
 
 .logo__img {
@@ -705,7 +708,7 @@ template {
 }
 
 .nav__item {
-  margin-right: 30px;
+  margin-right: 27px;
 }
 .nav__item:last-child {
   margin-right: 0;
@@ -718,6 +721,13 @@ template {
 
 .order {
   background: #d2ddd9 url("../images/content/bg/order_pattern.png") center center/cover no-repeat;
+}
+
+.order__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .order__form-wrap {
@@ -784,7 +794,7 @@ template {
 .review {
   background: #f8faf9 url("../images/content/leaves/6.png") right top no-repeat;
   padding: 52px 0 34px 46px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -899,8 +909,8 @@ template {
 .section__title {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 27px;
-  line-height: 1.15;
+  margin-bottom: 10px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .section__title--centered {
