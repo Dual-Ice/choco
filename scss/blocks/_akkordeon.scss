@@ -1,0 +1,11 @@
+.akkordeon__list {
+  display: flex;
+}
+
+.akkordeon__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

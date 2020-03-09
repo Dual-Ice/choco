@@ -4,10 +4,8 @@
 }
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   position: relative;
+  justify-content: flex-start;
 
   &:after {
     content: "";
@@ -15,7 +13,7 @@
     height: 112px;
     width: 59px;
     position: absolute;
-    bottom: -50px;
+    bottom: -48px;
     left: -50px;
   }
 
@@ -44,10 +42,11 @@
   margin-bottom: 30px;
 }
 
-.hero__button {
+.hero__text {
+  margin-top: 97px;
   margin-bottom: 70px;
 }
 
-.hero__text {
-  margin-top: 95px;
+.hero__image {
+  flex: 1;
 }

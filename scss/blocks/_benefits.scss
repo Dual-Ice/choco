@@ -3,7 +3,8 @@
 }
 
 .benefits__item {
-  margin-right: 47px;
+  // width: calc(100% / 3 - 30px);
+  margin-right: 15px;
 
   &:last-child {
     margin-right: 0;

@@ -3,10 +3,6 @@
 }
 
 .features__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
   position: relative;
 
   &:after {
@@ -21,7 +17,7 @@
 }
 
 .features__text {
-  margin-bottom: 65px;
+  margin-bottom: 40px;
 }
 
 .features__desc {
