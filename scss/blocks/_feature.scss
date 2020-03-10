@@ -28,5 +28,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url("../images/icons/other/dots.png") no-repeat;
+    width: 68px;
+    height: 22px;
+    top: 50%;
+    right: -140px;
+    transform: translateY(-50%);
+    position: absolute;
+  }
 }
 

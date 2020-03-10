@@ -595,6 +595,17 @@ template {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
+}
+.feature__item-img:after {
+  content: "";
+  background: url("../images/icons/other/dots.png") no-repeat;
+  width: 68px;
+  height: 22px;
+  top: 50%;
+  right: -140px;
+  transform: translateY(-50%);
+  position: absolute;
 }
 
 .features {
@@ -631,19 +642,8 @@ template {
 
 .features__item {
   width: calc(100% / 3 - 53px);
-  position: relative;
 }
-.features__item:after {
-  content: "";
-  background: url("../images/icons/other/dots.png") no-repeat;
-  width: 68px;
-  height: 22px;
-  top: 25%;
-  right: -75px;
-  transform: translateY(-50%);
-  position: absolute;
-}
-.features__item:last-child:after {
+.features__item:last-child .feature__item-img:after {
   display: none;
 }
 
@@ -1038,16 +1038,11 @@ template {
   margin-bottom: 0;
 }
 
-.switch-controls__radio {
+.switch-controls__elem {
   display: none;
 }
 
 .switch-controls__block-title {
-  font-size: 18px;
-  color: #365a49;
-}
-
-.switch-controls__block-title-cbx {
   font-size: 18px;
   color: #365a49;
 }
@@ -1075,7 +1070,7 @@ template {
   content: "";
 }
 
-.switch-controls__radio:checked + .switch-controls__block-title:after {
+.switch-controls__elem:checked + .switch-controls__block-title:after {
   position: absolute;
   top: 7px;
   left: 7px;
@@ -1086,27 +1081,16 @@ template {
   background-color: #365a49;
 }
 
-.switch-controls__checkbox {
-  display: none;
+.switch-controls__block--checkbox .switch-controls__block-title:before {
+  border-radius: 0;
 }
-
-.switch-controls__block-title-cbx:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 26px;
-  background: #fff;
-  content: "";
-}
-
-.switch-controls__checkbox:checked + .switch-controls__block-title-cbx:after {
-  position: absolute;
-  content: "";
+.switch-controls__block--checkbox .switch-controls__elem:checked + .switch-controls__block-title:after {
   left: 9px;
   top: 5px;
   width: 5px;
   height: 10px;
+  border-radius: 0;
+  background-color: transparent;
   border: solid #365a49;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
