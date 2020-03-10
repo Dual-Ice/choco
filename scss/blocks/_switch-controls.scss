@@ -5,7 +5,7 @@
 
 .switch-controls__row {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -57,6 +57,7 @@
 
 .switch-controls__block--checkbox {
   .switch-controls__block-title:before {
+    height: 25px;
     border-radius: 0;
   }
   
