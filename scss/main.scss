@@ -1,6 +1,6 @@
+@import "./layout/fonts";
 @import "./layout/color";
 @import "./layout/base";
-@import "./layout/fonts";
 @import "./layout/normalize";
 
 @import "./blocks/akkordeon";
@@ -26,7 +26,3 @@
 @import "./blocks/switch-controls";
 @import "./blocks/team";
 @import "./blocks/work";
-
-main {
-  padding: 10px;
-}
