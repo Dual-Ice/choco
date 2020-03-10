@@ -82,6 +82,12 @@
   font-weight: 100;
   font-style: italic;
 }
+@font-face {
+  font-family: "open_sans";
+  src: url("opensans-regular.woff2") format("woff2"), url("opensans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -879,6 +885,7 @@ template {
   border: none;
   padding: 20px 11px;
   font-size: 18px;
+  font-family: "open_sans", "Arial", sans-serif;
 }
 
 .order__block-title {
