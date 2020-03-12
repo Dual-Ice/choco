@@ -1,8 +1,5 @@
 .features {
   background: url("../images/content/bg/feature_leaf.png") left 55% no-repeat;
-}
-
-.features__container {
   position: relative;
 
   &:after {
@@ -12,7 +9,7 @@
     width: 161px;
     position: absolute;
     bottom: -110px;
-    left: -80px;
+    left: 0;
   }
 }
 
@@ -34,7 +31,7 @@
 .features__item {
   width: calc(100% / 3 - 53px);
 
-  &:last-child .feature__item-img:after {
+  &:last-child .feature__icon:after {
     display: none;
   }
 }

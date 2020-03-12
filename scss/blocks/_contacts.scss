@@ -1,12 +1,5 @@
-.contacts__phone {
-  display: flex;
-  align-self: center;
-  font-size: 24px;
-}
-
-.contacts__phone-img {
-  height: 12px;
-
-  align-self: center;
-  margin-right: 5px;
+.contacts {
+  background: $grey;
+  position: relative;
+  overflow: hidden;
 }

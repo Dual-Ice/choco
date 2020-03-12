@@ -1,18 +1,8 @@
 .reviews {
-  background: url("../images/content/berries/6.png") 98.5% 6% no-repeat;
-}
+  background: url("../images/content/berries/6.png") 99% 6% no-repeat;
 
-.reviews__container {
-  position: relative;
-
-  &:after {
-    content: "";
-    background: url("../images/content/berries/11.png") no-repeat;
-    height: 321px;
-    width: 139px;
-    position: absolute;
-    bottom: -160px;
-    left: -80px;
+  .section__title {
+    margin-bottom: 30px;
   }
 }
 

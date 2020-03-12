@@ -1,11 +1,14 @@
 .hero {
   background: #86c3d7 url(../images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
   color: $white;
+  justify-content: flex-start;
 }
 
 .hero__container {
-  position: relative;
+  display: flex;
   justify-content: flex-start;
+  position: relative;
+  height: 100%;
 
   &:after {
     content: "";
@@ -29,10 +32,12 @@
 }
 
 .hero__content {
-  display: flex;
+  flex: 1;
 }
 
 .hero__content-wrap {
+  flex-direction: column;
+  display: flex;
   flex: 1;
 }
 
@@ -43,8 +48,8 @@
 }
 
 .hero__text {
-  margin-top: 97px;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 65px;
 }
 
 .hero__image {

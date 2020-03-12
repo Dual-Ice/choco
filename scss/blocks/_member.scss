@@ -1,7 +1,7 @@
 .member {
-  &--desc-hidden {
+  &--desc-shown {
     .member__desc {
-      display: none;
+      height: 100%;
     }
 
     .member__name {
@@ -31,9 +31,10 @@
 }
 
 .member__desc {
-  // display: none;
+  height: 0;;
   text-align: center;
   font-size: 18px;
+  overflow: hidden;
 }
 
 .member__post {

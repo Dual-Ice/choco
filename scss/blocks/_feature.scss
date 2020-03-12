@@ -1,10 +1,10 @@
-.feature__item-wrap {
+.feature {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.feature__item-details {
+.feature__details {
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
   color: $grey;
 }
 
-.feature__item-img {
+.feature__icon {
   width: 125px;
   height: 125px;
   border-radius: 50%;

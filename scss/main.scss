@@ -3,15 +3,20 @@
 @import "./layout/base";
 @import "./layout/normalize";
 
-@import "./blocks/akkordeon";
+@import "./blocks/section";
+
+@import "./blocks/address";
+@import "./blocks/bars";
 @import "./blocks/benefit";
 @import "./blocks/benefits";
 @import "./blocks/btn";
 @import "./blocks/composition";
 @import "./blocks/contacts";
+@import "./blocks/phone";
 @import "./blocks/feature";
 @import "./blocks/features";
 @import "./blocks/fixed-menu";
+@import "./blocks/footer";
 @import "./blocks/header";
 @import "./blocks/hero";
 @import "./blocks/logo";
@@ -20,9 +25,9 @@
 @import "./blocks/menu";
 @import "./blocks/nav";
 @import "./blocks/order";
+@import "./blocks/phone";
 @import "./blocks/review";
 @import "./blocks/reviews";
-@import "./blocks/section";
 @import "./blocks/switch-controls";
 @import "./blocks/team";
 @import "./blocks/work";
