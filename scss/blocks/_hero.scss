@@ -10,24 +10,33 @@
   position: relative;
   height: 100%;
 
+  @include tablets {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    &:after, &:before {
+      display: none;
+    }
+  }
+
   &:after {
     content: "";
     background: url("../images/content/leaves/1.png") no-repeat;
-    height: 112px;
-    width: 59px;
+    height: rem(112px);
+    width: rem(59px);
     position: absolute;
-    bottom: -48px;
-    left: -50px;
+    bottom: rem(-48px);
+    left: rem(-50px);
   }
 
   &:before {
     content: "";
     background: url("../images/content/berries/10.png") no-repeat;
-    height: 122px;
-    width: 342px;
+    height: rem(122px);
+    width: rem(342px);
     position: absolute;
-    bottom: -48px;
-    right: 10px;
+    bottom: rem(-48px);
+    right: rem(10px);
   }
 }
 
@@ -39,20 +48,48 @@
   flex-direction: column;
   display: flex;
   flex: 1;
+
+  @include tablets {
+    align-items: center;
+    flex: 0;
+  }
 }
 
 .hero__desc {
-  font-size: 21px;
-  line-height: 25px;
-  margin-bottom: 30px;
-  padding-right: 65px;
+  font-size: rem(21px);
+  line-height: rem(25px);
+  margin-bottom: rem(30px);
+  padding-right: rem(65px);
+
+  @include tablets {
+    padding-right: 0;
+    text-align: center;
+    padding-right: rem(220px);
+    padding-left: rem(220px);
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .hero__text {
-  margin-top: 90px;
-  margin-bottom: 65px;
+  margin-top: rem(90px);
+  margin-bottom: rem(65px);
+
+  @include tablets {
+    margin: 0;
+  }
 }
 
 .hero__image {
   flex: 1;
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54%;
+    flex: 0;
+  }
 }

@@ -4,26 +4,32 @@
   &:before {
     content: "";
     background: url("../images/content/leaves/11.png") no-repeat;
-    height: 453px;
-    width: 196px;
+    background-size: cover;
+    height: rem(453px);
+    width: rem(196px);
     position: absolute;
-    top: -240px;
+    top: rem(-240px);
     right: 0;
   }
 
   .section__title {
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
   }
 }
 
 .team__akkordeon {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .team__akkordeon-item {
-  width: 221px; 
-  margin-right: 20px;
+  width: rem(221px); 
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;

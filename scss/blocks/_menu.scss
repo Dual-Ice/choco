@@ -6,11 +6,11 @@
   &:before {
     content: "";
     background: url("../images/content/berries/5.png") no-repeat;
-    height: 114px;
-    width: 104px;
+    height: rem(114px);
+    width: rem(104px);
     position: absolute;
-    top: -70px;
-    left: 35px;
+    top: rem(-70px);
+    left: rem(35px);
   }
 
   .section__title {
@@ -44,23 +44,31 @@
 
   &--openned {
     .menu__element-desc {
-      width: 530px;
+      width: rem(530px);
+    }
+
+    @include phones {
+      width: rem(430px);
     }
   }
 }
 
 .menu__element-title {
-  width: 100px;
+  width: rem(100px);
   display: block;
   height: 100%;
   position: relative;
+
+  @include phones {
+    width: rem(80px);
+  }
 }
 
 .menu__element-title-text {
   position: absolute;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   left: 50%;
   top: 94%;
@@ -76,16 +84,20 @@
   position: relative;
 }
 
-.menu__element-close {
+.menu__element-close-icon {
   fill: $white;
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   position: absolute;
   top: 4%;
   right: 6%;
 }
 
 .menu__element-text {
-  padding: 47px 120px 0 30px;
-  line-height: 24px;
+  padding: rem(47px) rem(120px) 0 rem(30px);
+  line-height: rem(24px);
+
+  @include phones {
+    padding: rem(60px) rem(10px) 0 rem(15px);
+  }
 }

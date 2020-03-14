@@ -1,10 +1,15 @@
+.benefits {
+  @include tablets {
+    display: none;
+  }
+}
+
 .benefits__list {
   display: flex;
 }
 
 .benefits__item {
-  // width: calc(100% / 3 - 30px);
-  margin-right: 15px;
+  margin-right: rem(15px);
 
   &:last-child {
     margin-right: 0;

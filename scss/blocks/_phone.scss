@@ -1,9 +1,21 @@
 .phone {
+  @include tablets {
+    display: none;
+  }
+
   &--footer {
+    @include tablets {
+      display: block;
+    }
+
     .phone__link {
       color: $green;
       font-style: normal;
-      font-size: 21px;
+      font-size: rem(21px);
+
+      @include tablets {
+        justify-content: center;
+      }
     }
 
     .phone__icon {
@@ -15,13 +27,13 @@
 .phone__link {
   display: flex;
   align-self: center;
-  font-size: 24px;
+  font-size: rem(24px);
 }
 
 .phone__icon {
-  height: 12px;
-  width: 12px;
+  height: rem(12px);
+  width: rem(12px);
   fill: $white;
   align-self: center;
-  margin-right: 5px;
+  margin-right: rem(5px);
 }

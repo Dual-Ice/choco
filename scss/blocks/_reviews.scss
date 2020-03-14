@@ -2,12 +2,12 @@
   background: url("../images/content/berries/6.png") 99% 6% no-repeat;
 
   .section__title {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
   }
 }
 
 .reviews__item {
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &:last-child {
     margin-right: 0;
@@ -16,14 +16,14 @@
 
 .reviews__item--selected {
   .reviews__item-avatar {
-    border: 6px solid $green;
+    border: rem(6px) solid $green;
     box-sizing: content-box;
   }
 }
 
 .reviews__item-avatar {
-  width: 68px;
-  height: 68px;
+  width: rem(68px);
+  height: rem(68px);
   border-radius: 50%;
   overflow: hidden;
 }

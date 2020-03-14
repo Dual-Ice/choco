@@ -5,20 +5,21 @@
   &:before {
     content: "";
     background: url("../images/content/berries/11.png") no-repeat;
-    height: 321px;
-    width: 139px;
+    background-size: cover;
+    height: rem(321px);
+    width: rem(150px);
     position: absolute;
-    top: -160px;
+    top: rem(-160px);
     left: 0;
   }
 
   &:after {
     content: "";
     background: url("../images/content/leaves/9.png") no-repeat;
-    height: 264px;
-    width: 242px;
+    height: rem(264px);
+    width: rem(242px);
     position: absolute;
-    bottom: -105px;
-    right: -50px;
+    bottom: rem(-105px);
+    right: rem(-50px);
   }
 }

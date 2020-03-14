@@ -4,10 +4,10 @@
 
 .benefit__img {
   flex-shrink: 0;
-  margin-right: 9px;
+  margin-right: rem(9px);
   fill: $light_blue;
-  height: 42px;
-  width: 50px;
+  height: rem(42px);
+  width: rem(50px);
 }
 
 .benefit__text {

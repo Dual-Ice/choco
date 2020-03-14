@@ -1,10 +1,14 @@
 .header {
-  margin-top: 25px;
+  margin-top: rem(25px);
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablets {
+    padding: 0 rem(20px);
+  }
 }
 

@@ -5,10 +5,14 @@
 
 .switch-controls__row {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include phones {
+    justify-content: center;
   }
 }
 
@@ -17,17 +21,17 @@
 }
 
 .switch-controls__block-title {
-  font-size: 18px;
+  font-size: rem(18px);
   color: $green;
-  margin-left: 5px;
+  margin-left: rem(5px);
 }
 
 .switch-controls__block {
   display: flex;
-  margin-right: 25px;
+  margin-right: rem(25px);
   align-items: center;
   position: relative;
-  padding-left: 30px;
+  padding-left: rem(30px);
 }
 
 .switch-controls__block:last-child {
@@ -38,8 +42,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 26px;
-  width: 26px;
+  height: rem(26px);
+  width: rem(26px);
   background: $white;
   border-radius: 50%;
   content:"";
@@ -47,30 +51,30 @@
 
 .switch-controls__elem:checked + .switch-controls__block-title:after {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: rem(7px);
+  left: rem(7px);
   content: ""; 
-  height: 13px;
-  width: 13px;
+  height: rem(13px);
+  width: rem(13px);
   border-radius: 50%;
   background-color: $green;
 }
 
 .switch-controls__block--checkbox {
   .switch-controls__block-title:before {
-    height: 25px;
+    height: rem(25px);
     border-radius: 0;
   }
   
   .switch-controls__elem:checked + .switch-controls__block-title:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
+    left: rem(9px);
+    top: rem(5px);
+    width: rem(5px);
+    height: rem(10px);
     border-radius: 0;
     background-color: transparent;
     border: solid $green;
-    border-width: 0 3px 3px 0;
+    border-width: 0 rem(3px) rem(3px) 0;
     transform: rotate(45deg);
   }
 }

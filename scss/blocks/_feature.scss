@@ -2,48 +2,76 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include phones {
+    flex-direction: row;
+  }
 }
 
 .feature__details {
   text-align: center;
+
+  @include phones {
+    text-align: left;
+  }
 }
 
 .feature__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
   line-height: 1;
+
+  @include phones {
+    margin-bottom: rem(15px);
+  }
 }
 
 .feature__text {
   color: $grey;
+
+  @include phones {
+    font-size: rem(18px);
+  }
 }
 
 .feature__icon {
-  width: 125px;
-  height: 125px;
+  width: rem(125px);
+  height: rem(125px);
   border-radius: 50%;
   background-color: #f2f5f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
   position: relative;
 
   &:after {
     content: "";
     background: url("../images/icons/dots.png") no-repeat;
-    width: 68px;
-    height: 22px;
+    width: rem(68px);
+    height: rem(22px);
     top: 50%;
-    right: -140px;
+    right: rem(-140px);
     transform: translateY(-50%);
     position: absolute;
+  }
+
+  @include tablets {
+    &:after {
+      display: none;
+    }
+  }
+
+  @include phones {
+    margin-right: rem(13px);
+    flex-shrink: 0;
+    margin-bottom: 0;
   }
 }
 
 .feature__icon-img {
-  width: 75px;
-  height: 70px;
+  width: rem(75px);
+  height: rem(70px);
 }
 

@@ -3,13 +3,13 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
@@ -20,5 +20,9 @@
 
   &--green {
     color: $green;
+  }
+
+  @include tablets {
+    text-align: center;
   }
 }

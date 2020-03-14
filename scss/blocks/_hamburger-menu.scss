@@ -1,0 +1,40 @@
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: $dark_grey;
+  opacity: .99;
+  color: $white;
+  align-items: center;
+  justify-content: center;
+
+  &--visible {
+    display: flex;
+  }
+}
+
+.hamburger-menu__logo {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.hamburger-menu__logo-icon {
+  height: rem(25px);
+  width: rem(25px);
+  fill: $white;
+}
+
+.hamburger-menu__close-icon {
+  fill: $white;
+  height: rem(20px);
+  width: rem(20px);
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
