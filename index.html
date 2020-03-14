@@ -70,7 +70,6 @@
                         <svg class="benefit__img">
                           <use xlink:href="./images/icons/sprite.svg#natural"></use>
                         </svg>
-          	            <!-- <img src="images/icons/benefits/natural.png" alt=""> -->
           	          <div class="benefit__text">100% натуральный продукт</div>
           	        </div>
           	      </li>
@@ -79,7 +78,6 @@
                         <svg class="benefit__img">
                           <use xlink:href="./images/icons/sprite.svg#delivery"></use>
                         </svg>
-          	            <!-- <img src="images/icons/benefits/delivery.png" alt=""> -->
           	          <div class="benefit__text">3-5 дней доставка по РФ</div>
           	        </div>
           	      </li>
@@ -88,7 +86,6 @@
                         <svg class="benefit__img">
                           <use xlink:href="./images/icons/sprite.svg#figure"></use>
                         </svg>
-          	            <!-- <img src="images/icons/benefits/figure.png" alt=""> -->
           	          <div class="benefit__text">Не портит фигуру</div>
           	        </div>
           	      </li>
@@ -217,21 +214,59 @@
     </section>
 
     <section class="section menu">
-      <h2 class="section__title">Меню</h2>
-      <!-- <ul class="menu__akkordeon">
-        <li class="menu__akkordeon-item menu__element">
-          <div class="menu__element-title" style="background: url('../images/content/menu/with_milk.png');">
-            <div class="menu__element-title-text">
-              Батончик с молоком
+      <div class="container">
+        <h2 class="section__title">Меню</h2>
+        <ul class="menu__akkordeon">
+          <li class="menu__akkordeon-item menu__element menu__element--milk menu__element--openned">
+            <a href="#" class="menu__element-title">
+              <div class="menu__element-title-text">
+                Батончики с молоком
+              </div>
+            </a>
+            <div class="menu__element-desc">
+              <div class="menu__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+              </div>
+              <svg class="menu__element-close">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
             </div>
-          </div>
-          <div class="menu__element-desc">
-            <div class="menu__element-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam voluptatem debitis earum architecto magni cum perspiciatis inventore eveniet ad, impedit beatae. Officia autem, incidunt qui nobis est facere nemo.
+          </li>
+          <li class="menu__akkordeon-item menu__element menu__element--honey">
+            <a href="#" class="menu__element-title">
+              <div class="menu__element-title-text">
+                С мёдом и фруктами
+              </div>
+            </a>
+            <div class="menu__element-desc">
+              <div class="menu__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+              </div>
+              <svg class="menu__element-close">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
             </div>
-          </div>
-        </li>
-      </ul> -->
+          </li>
+          <li class="menu__akkordeon-item menu__element menu__element--berries">
+            <a href="#" class="menu__element-title">
+              <div class="menu__element-title-text">
+                Дикие ягоды
+              </div>
+            </a>
+            <div class="menu__element-desc">
+              <div class="menu__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+              </div>
+              <svg class="menu__element-close">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section reviews">
@@ -364,7 +399,7 @@
         </div>
       </div>
       <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
           <div class="footer__col">
             <address class="address">
               <div class="address__text">
@@ -385,22 +420,30 @@
               <ul class="socials__list">
                 <li class="socials__item social">
                   <a href="#" class="social__link">
-                    <div class="social__img"></div>
+                    <svg class="social__icon">
+                      <use xlink:href="./images/icons/sprite.svg#vk" />
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item social">
                   <a href="#" class="social__link">
-                    <div class="social__img"></div>
+                    <svg class="social__icon">
+                      <use xlink:href="./images/icons/sprite.svg#facebook" />
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item social">
                   <a href="#" class="social__link">
-                    <div class="social__img"></div>
+                    <svg class="social__icon">
+                      <use xlink:href="./images/icons/sprite.svg#inst" />
+                    </svg>
                   </a>
                 </li>
                 <li class="socials__item social">
                   <a href="#" class="social__link">
-                    <div class="social__img"></div>
+                    <svg class="social__icon">
+                      <use xlink:href="./images/icons/sprite.svg#twitter" />
+                    </svg>
                   </a>
                 </li>
               </ul>

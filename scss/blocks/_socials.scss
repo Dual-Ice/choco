@@ -1,0 +1,17 @@
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    .social__icon {
+      fill: $black;
+    }
+  }
+}

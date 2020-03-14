@@ -21,20 +21,33 @@
 }
 
 .menu__akkordeon {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+  display: flex;
 }
 
 .menu__akkordeon-item {
-  height: 100%;
+  display: flex;
 }
 
-// .menu__element-desc {
-//   background: #333537;
-//   width: 530px;
-// }
+.menu__element {
+  $bg_list: 'milk', 'honey', 'berries';
+
+  @each $bg in $bg_list {
+    &--#{$bg} {
+      background: #000 url('../images/content/menu/#{$bg}.png') center center /cover no-repeat; 
+      opacity: 0.9;
+    }
+  }
+
+  &--openned {
+    .menu__element-desc {
+      width: 530px;
+    }
+  }
+}
 
 .menu__element-title {
   width: 100px;
@@ -47,12 +60,32 @@
   position: absolute;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
-  height: 100%;
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: 700;
   left: 50%;
-  top: 100%;
+  top: 94%;
+	text-align: center;
+	white-space: nowrap;
 }
 
-// .menu__element-wrap {
-//   display: flex;
-// }
+.menu__element-desc {
+  background: #333537;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu__element-close {
+  fill: $white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4%;
+  right: 6%;
+}
+
+.menu__element-text {
+  padding: 47px 120px 0 30px;
+  line-height: 24px;
+}

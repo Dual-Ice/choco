@@ -81,6 +81,12 @@
   padding: 20px 11px;
   font-size: 18px;
   font-family: "open_sans", "Arial", sans-serif;
+  border: 3px solid transparent;
+  outline: none;
+
+  &:focus {
+    border-color: $light_yellow;
+  }
 }
 
 .order__block-title {

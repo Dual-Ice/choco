@@ -754,9 +754,16 @@ template {
 
 .footer__col {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 .footer__col--right {
   text-align: right;
+  justify-content: flex-end;
+}
+
+.footer__container {
+  display: flex;
 }
 
 .header {
@@ -905,14 +912,31 @@ template {
 }
 
 .menu__akkordeon {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+  display: flex;
 }
 
 .menu__akkordeon-item {
-  height: 100%;
+  display: flex;
+}
+
+.menu__element--milk {
+  background: #000 url("../images/content/menu/milk.png") center center/cover no-repeat;
+  opacity: 0.9;
+}
+.menu__element--honey {
+  background: #000 url("../images/content/menu/honey.png") center center/cover no-repeat;
+  opacity: 0.9;
+}
+.menu__element--berries {
+  background: #000 url("../images/content/menu/berries.png") center center/cover no-repeat;
+  opacity: 0.9;
+}
+.menu__element--openned .menu__element-desc {
+  width: 530px;
 }
 
 .menu__element-title {
@@ -926,10 +950,34 @@ template {
   position: absolute;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
-  height: 100%;
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: 700;
   left: 50%;
-  top: 100%;
+  top: 94%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menu__element-desc {
+  background: #333537;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu__element-close {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4%;
+  right: 6%;
+}
+
+.menu__element-text {
+  padding: 47px 120px 0 30px;
+  line-height: 24px;
 }
 
 .nav__list {
@@ -1023,6 +1071,11 @@ template {
   padding: 20px 11px;
   font-size: 18px;
   font-family: "open_sans", "Arial", sans-serif;
+  border: 3px solid transparent;
+  outline: none;
+}
+.order__form-input:focus {
+  border-color: #dee2bd;
 }
 
 .order__block-title {
@@ -1159,6 +1212,26 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-left: 20px;
+}
+.socials__item:first-child {
+  margin-left: 0;
+}
+.socials__item:hover .social__icon {
+  fill: #000;
 }
 
 .switch-controls {
