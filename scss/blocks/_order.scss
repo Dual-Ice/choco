@@ -44,7 +44,8 @@
   
   @include tablets {
     align-items: center;
-    padding: 0 15% 0 20%;
+    width: rem(460px);
+    margin: 0 auto;
   }
 
   @include phones {

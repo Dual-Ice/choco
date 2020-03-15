@@ -11,6 +11,12 @@
     position: absolute;
     top: rem(-70px);
     left: rem(35px);
+
+    @include tablets {
+      background-size: cover;
+      width: rem(83px);
+      height: rem(90px);
+    }
   }
 
   .section__title {
@@ -45,10 +51,14 @@
   &--openned {
     .menu__element-desc {
       width: rem(530px);
+
+      @include tablets {
+        width: 100%;
+      }
     }
 
     @include phones {
-      width: rem(430px);
+      width: 100%;
     }
   }
 }
@@ -58,8 +68,9 @@
   display: block;
   height: 100%;
   position: relative;
+  flex-shrink: 0;
 
-  @include phones {
+  @include tablets {
     width: rem(80px);
   }
 }
@@ -94,10 +105,10 @@
 }
 
 .menu__element-text {
-  padding: rem(47px) rem(120px) 0 rem(30px);
+  padding: rem(47px) rem(60px) 0 rem(30px);
   line-height: rem(24px);
 
   @include phones {
-    padding: rem(60px) rem(10px) 0 rem(15px);
+    padding: rem(60px) rem(15px) 0 rem(15px);
   }
 }

@@ -19,6 +19,7 @@
 .review__container{
   display: flex;
   background: #f8faf9 url("../images/content/leaves/6.png") right top no-repeat;
+  background-size: rem(127px) rem(167px);
   padding: rem(52px) 0 rem(34px) rem(46px);
 
   @include tablets {

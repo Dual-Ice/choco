@@ -2,6 +2,11 @@
   background: #86c3d7 url(../images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
   color: $white;
   justify-content: flex-start;
+
+  @include tablets {
+    background-size: 65%;
+    background-position-y: 15%;
+  }
 }
 
 .hero__container {
@@ -13,6 +18,7 @@
   @include tablets {
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
 
     &:after, &:before {
       display: none;
@@ -75,7 +81,6 @@
 
 .hero__text {
   margin-top: rem(90px);
-  margin-bottom: rem(65px);
 
   @include tablets {
     margin: 0;
@@ -89,7 +94,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 54%;
+    width: 50%;
     flex: 0;
   }
+}
+
+.hero__button {
+  margin-bottom: rem(65px);
 }

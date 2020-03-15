@@ -1,22 +1,4 @@
-.hamburger-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: $dark_grey;
-  opacity: .99;
-  color: $white;
-  align-items: center;
-  justify-content: center;
-
-  &--visible {
-    display: flex;
-  }
-}
-
-.hamburger-menu__logo {
+.hamburger-menu__icon {
   display: none;
 
   @include tablets {
@@ -24,7 +6,7 @@
   }
 }
 
-.hamburger-menu__logo-icon {
+.hamburger-menu__icon-img {
   height: rem(25px);
   width: rem(25px);
   fill: $white;

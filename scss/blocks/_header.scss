@@ -1,5 +1,7 @@
 .header {
   margin-top: rem(25px);
+  position: relative;
+  z-index: 1;
 }
 
 .header__container {
