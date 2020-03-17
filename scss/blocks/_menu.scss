@@ -26,10 +26,6 @@
     top: 13%;
     left: 7%;
   }
-
-  .container {
-    height: 100%;
-  }
 }
 
 .menu__akkordeon {
@@ -44,9 +40,11 @@
   $bg_list: 'milk', 'honey', 'berries';
 
   @each $bg in $bg_list {
-    &--#{$bg} {
-      background: #000 url('../images/content/menu/#{$bg}.png') center center /cover no-repeat; 
-      opacity: 0.9;
+    &--#{$bg} { 
+      .menu__element-title {
+        background: #000 url('../images/content/menu/#{$bg}.png') center center /cover no-repeat; 
+        opacity: 0.9;
+      }
     }
   }
 

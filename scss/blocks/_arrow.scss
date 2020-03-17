@@ -1,5 +1,9 @@
 .arrow {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: rem(50px);
   &--left {
     .arrow__img {
       transform: rotate(180deg);
@@ -8,6 +12,6 @@
 }
 
 .arrow__img {
-  width: rem(40px);
-  height: rem(40px);
+  width: rem(13px);
+  height: rem(28px);
 }

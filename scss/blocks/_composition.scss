@@ -1,1 +1,24 @@
+.composition {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: rem(15px);
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.composition__icon {
+  margin-right: rem(25px);
+}
+
+.composition__icon-img {
+  width: rem(35px);
+  height: rem(35px);
+  flex-shrink: 0;
+}
+
+.composition__text {
+  margin-right: auto;
+}

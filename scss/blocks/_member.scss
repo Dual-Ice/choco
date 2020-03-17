@@ -32,8 +32,8 @@
 
     .member__name {
       &:after {
-        border-top: rem(6px) solid $green;
-        border-bottom-width: 0;
+        border-bottom: rem(6px) solid $green;
+        border-top-width: 0;
       }
     }
 
@@ -73,10 +73,10 @@
     content: "";
     position: absolute;
     border: rem(4px) solid transparent;
-    border-bottom: rem(6px) solid $green;
-    border-top-width: 0;
-    top: rem(15px);
-    margin-left: rem(3px);
+    border-top: rem(6px) solid $green;
+    border-bottom-width: 0;
+    top: rem(13px);
+    margin-left: rem(5px);
   }
 }
 

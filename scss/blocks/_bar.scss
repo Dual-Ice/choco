@@ -1,0 +1,140 @@
+.bar {
+  display: flex;
+  justify-content: center;
+}
+
+.bar__pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: rem(60px);
+  width: rem(445px);
+}
+
+.bar__pic-img {
+  // height: 100%;
+  // width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.bar__content {
+  flex: 1;
+  color: $black;
+}
+
+.bar__composition {
+  display: inline-block;
+  margin-bottom: rem(30px);
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    .bar__composition-block {
+      display: block;
+    }
+  }
+}
+
+.bar__composition-btn {
+  width: rem(90px);
+  height: rem(90px);
+  border-radius: 5px;
+  color: $white;
+  background-color: $blue;
+  padding: rem(11px) rem(20px);
+}
+
+.bar__composition-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: rem(14px);
+}
+
+.bar__composition-icon {
+  width: rem(51px);
+  height: rem(51px);
+  fill: $white;
+  margin-bottom: rem(3px);
+}
+
+.bar__price-curency-img {
+  width: rem(24px);
+  height: rem(32px);
+}
+
+.bar__composition-block {
+  display: none;
+  width: rem(270px);
+  position: absolute;
+  top: 0;
+  left: rem(90px);
+  background-color: $white;
+  opacity: .95;
+  padding: rem(25px) rem(20px) rem(25px) rem(33px);
+  border: rem(1px) solid #eee;
+  border-radius: 5px;
+}
+
+
+.bar__title {
+  font-size: rem(36px);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: rem(40px);
+  margin-bottom: rem(15px);
+  // margin-top: rem(70px);
+}
+
+.bar__desc {
+  margin-bottom: rem(40px);
+  padding-right: rem(50px);
+}
+
+.bar__details {
+  font-size: rem(18px);
+  display: flex;
+  margin-bottom: rem(30px);
+}
+
+.bar__kalory {
+  margin-right: rem(50px);
+}
+
+.bar__order {
+  display: flex;
+}
+
+.bar__price {
+  display: flex;
+  align-items: center;
+  margin-right: rem(40px);
+}
+
+.bar__desc, 
+.bar__kalory-text,
+.bar__weight-text {
+  color: $grey;
+}
+
+.bar__kalory-value,
+.bar__weight-value {
+  font-weight: 700;
+  color: $black;
+}
+
+.bar__price-value {
+  font-size: rem(60px);
+  line-height: rem(60px);
+  font-weight: 300;
+  margin-right: rem(10px);
+}
+
+.bar__order-button {
+  &:hover {
+    .btn--green {
+      background-color: #2e4e3f;
+      transition: .3;
+    }
+  }
+}

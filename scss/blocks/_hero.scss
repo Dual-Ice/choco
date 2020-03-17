@@ -1,5 +1,5 @@
 .hero {
-  background: #86c3d7 url(../images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
+  background: $blue url(../images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
   color: $white;
   justify-content: flex-start;
 
@@ -80,7 +80,7 @@
 }
 
 .hero__text {
-  margin-top: rem(90px);
+  margin-top: rem(95px);
 
   @include tablets {
     margin: 0;
@@ -101,4 +101,8 @@
 
 .hero__button {
   margin-bottom: rem(65px);
+
+  &:hover {
+
+  }
 }
