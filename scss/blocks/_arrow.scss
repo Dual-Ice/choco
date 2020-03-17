@@ -1,0 +1,13 @@
+.arrow {
+  display: flex;
+  &--left {
+    .arrow__img {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.arrow__img {
+  width: rem(40px);
+  height: rem(40px);
+}

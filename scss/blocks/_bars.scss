@@ -1,3 +1,12 @@
 .bars {
   background: $light_grey; 
 }
+
+.bars__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bars__list {
+  display: flex;
+}

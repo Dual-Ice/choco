@@ -12,10 +12,11 @@
     right: 0;
     left: 0;
     background: $dark_grey;
-    opacity: .99;
+    opacity: 0;
     color: $white;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.5;
 
     width: auto;
     .nav__list{
@@ -42,7 +43,7 @@
     @include tablets {
       display: flex;
       z-index: 100;
-      // display: block;
+      opacity: .99;
     }
   }
 }

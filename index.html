@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <script async src="./script/script.js"></script>
   <title>Choco</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
               </a>
             </address>
             <div class="hamburger-menu__icon">
-              <a href="" class="hamburger-menu__icon-link">
+              <a href="#" class="hamburger-menu__icon-link">
                 <svg class="hamburger-menu__icon-img">
                   <use xlink:href="./images/icons/sprite.svg#hamburger" />
                 </svg>
@@ -163,7 +164,70 @@
       </div>
     </section>
 
-    <section class="section bars"></section>
+    <section class="section bars">
+      <div class="container bars__container">
+        <a href="#" class="arrow arrow--left">
+          <svg class="arrow__img">
+            <use xlink:href="./images/icons/sprite.svg#arrow" />
+          </svg>
+        </a>
+        <ul class="bars__list">
+          <li class="bars__item bar">
+            <div class="bar__pic">
+              <img src="" alt="" class="bar__pic-img">
+            </div>
+            <div class="bar__content">
+              <div class="bar__composition">
+                <div class="bar__composition-btn">
+                  <svg class="bar__composition-icon">
+                    <use xlink:href="./images/icons.sprite.svg#bar" />
+                  </svg>
+                  <div class="bar__composition-text">Состав</div>
+                </div>
+                <div class="bar__composition-block">Здесь расписан состав</div>
+              </div>
+              <div class="bar__title">Батончик "Морские водоросли"</div>
+              <div class="bar__desc">
+                <p>
+                  Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                </p>
+              </div>
+              <div class="bar__details">
+                <div class="bar__kalory">
+                  <div class="bar__kalory-text">Калорийность</div>
+                  <div class="bar__kalory-value">120 ккал</div>
+                </div>
+                <div class="bar__weght">
+                  <div class="bar__weight-text">Вес</div>
+                  <div class="bar__weight-value">98 грамм</div>
+                </div>
+              </div>
+              <div class="bar__order">
+                <div class="bar__price">
+                  <div class="bar__price-value">140</div>
+                  <div class="bar__price-curency">
+                    <svg class="bar__price-curency-img">
+                      <use xlink:href="./images/icons/sprite.svg#rub" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="bar__order-button btn btn--green">
+                    Заказать
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bars__item bar">
+
+          </li>
+        </ul>
+        <a href="#" class="arrow">
+          <svg class="arrow__img">
+            <use xlink:href="./images/icons/sprite.svg#arrow" />
+          </svg>
+        </a>
+      </div>
+    </section>
 
     <section class="section team">
       <h2 class="section__title">Команда</h2>
@@ -228,65 +292,63 @@
     </section>
 
     <section class="section menu">
-      <div class="container">
-        <h2 class="section__title">Меню</h2>
-        <ul class="menu__akkordeon">
-          <li class="menu__akkordeon-item menu__element menu__element--milk menu__element--openned">
-            <a href="#" class="menu__element-title">
-              <div class="menu__element-title-text">
-                Батончики с молоком
-              </div>
-            </a>
-            <div class="menu__element-desc">
-              <div class="menu__element-text">
-                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
-              </div>
-              <a href="#" class="menu__element-close">
-                <svg class="menu__element-close-icon">
-                  <use xlink:href="./images/icons/sprite.svg#close"/>
-                </svg>
-              </a>
+      <h2 class="section__title">Меню</h2>
+      <ul class="menu__akkordeon">
+        <li class="menu__akkordeon-item menu__element menu__element--milk menu__element--openned">
+          <a href="#" class="menu__element-title">
+            <div class="menu__element-title-text">
+              Батончики с молоком
             </div>
-          </li>
-          <li class="menu__akkordeon-item menu__element menu__element--honey">
-            <a href="#" class="menu__element-title">
-              <div class="menu__element-title-text">
-                С мёдом и фруктами
-              </div>
-            </a>
-            <div class="menu__element-desc">
-              <div class="menu__element-text">
-                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
-              </div>
-              <a href="#" class="menu__element-close">
-                <svg class="menu__element-close-icon">
-                  <use xlink:href="./images/icons/sprite.svg#close"/>
-                </svg>
-              </a>
+          </a>
+          <div class="menu__element-desc">
+            <div class="menu__element-text">
+              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
             </div>
-          </li>
-          <li class="menu__akkordeon-item menu__element menu__element--berries">
-            <a href="#" class="menu__element-title">
-              <div class="menu__element-title-text">
-                Дикие ягоды
-              </div>
+            <a href="#" class="menu__element-close">
+              <svg class="menu__element-close-icon">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
             </a>
-            <div class="menu__element-desc">
-              <div class="menu__element-text">
-                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
-                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
-              </div>
-              <a href="#" class="menu__element-close">
-                <svg class="menu__element-close-icon">
-                  <use xlink:href="./images/icons/sprite.svg#close"/>
-                </svg>
-              </a>
+          </div>
+        </li>
+        <li class="menu__akkordeon-item menu__element menu__element--honey">
+          <a href="#" class="menu__element-title">
+            <div class="menu__element-title-text">
+              С мёдом и фруктами
             </div>
-          </li>
-        </ul>
-      </div>
+          </a>
+          <div class="menu__element-desc">
+            <div class="menu__element-text">
+              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+            </div>
+            <a href="#" class="menu__element-close">
+              <svg class="menu__element-close-icon">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="menu__akkordeon-item menu__element menu__element--berries">
+          <a href="#" class="menu__element-title">
+            <div class="menu__element-title-text">
+              Дикие ягоды
+            </div>
+          </a>
+          <div class="menu__element-desc">
+            <div class="menu__element-text">
+              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+            </div>
+            <a href="#" class="menu__element-close">
+              <svg class="menu__element-close-icon">
+                <use xlink:href="./images/icons/sprite.svg#close"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="section reviews">

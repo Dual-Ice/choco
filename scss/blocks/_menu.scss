@@ -2,6 +2,8 @@
   background: $black url("../images/content/menu/menu-bg.png") center center / cover no-repeat;
   color: $white;
   position: relative;
+  justify-content: flex-end;
+  flex-direction: row;
 
   &:before {
     content: "";
@@ -24,13 +26,13 @@
     top: 13%;
     left: 7%;
   }
+
+  .container {
+    height: 100%;
+  }
 }
 
 .menu__akkordeon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
 }
 
@@ -65,8 +67,6 @@
 
 .menu__element-title {
   width: rem(100px);
-  display: block;
-  height: 100%;
   position: relative;
   flex-shrink: 0;
 
@@ -90,7 +90,6 @@
 .menu__element-desc {
   background: #333537;
   width: 0;
-  height: 100%;
   overflow: hidden;
   position: relative;
 }
