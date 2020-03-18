@@ -78,6 +78,16 @@
     top: rem(13px);
     margin-left: rem(5px);
   }
+
+  &:before {
+    content: "";
+    display: block;
+    left: rem(-10px);
+    right: rem(-25px);
+    height: rem(25px);
+    top: 0;
+    position: absolute;
+  }
 }
 
 .member__desc {

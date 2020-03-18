@@ -14,7 +14,10 @@
     @include tablets {
       width: rem(157px);
       height: rem(362px);
+      background-size: 80% 80%;
       top: rem(-200px);
+      top: rem(-140px);
+      right: rem(-30px);
     }
   }
 
