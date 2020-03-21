@@ -116,7 +116,8 @@ body {
   margin: 0;
   color: #000;
 }
-body--menu-openned {
+
+.body--menu-openned {
   height: 100vh;
   overflow: hidden;
 }
@@ -560,11 +561,36 @@ template {
 .arrow--left {
   left: -1.5625rem;
 }
+@media screen and (max-width: 768px) {
+  .arrow--left {
+    left: 9.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow--left {
+    left: 0.625rem;
+  }
+}
 .arrow--left .arrow__img {
   transform: rotate(180deg);
 }
 .arrow--right {
   right: -1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .arrow--right {
+    right: 9.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow--right {
+    right: 0.625rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    top: 12.5rem;
+  }
 }
 
 .arrow__img {
@@ -576,11 +602,23 @@ template {
   display: flex;
   justify-content: center;
   padding-bottom: 3.75rem;
+  width: 85vw;
+}
+@media screen and (max-width: 768px) {
+  .bar {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bar {
+    width: 96vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .bar {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 
@@ -590,12 +628,42 @@ template {
   justify-content: center;
   margin-right: 2.5rem;
   width: 31.25rem;
+  position: relative;
+}
+.bar__pic:before, .bar__pic:after {
+  content: "";
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bar__pic:before {
+  height: 5.75rem;
+  width: 4.6875rem;
+  background-image: url("../images/content/leaves/4.png");
+  left: 0;
+  top: 8.125rem;
+}
+.bar__pic:after {
+  height: 4.5625rem;
+  width: 6.1875rem;
+  background-image: url("../images/content/leaves/5.png");
+  bottom: -0.3125rem;
+  right: 1.875rem;
 }
 @media screen and (max-width: 768px) {
   .bar__pic {
-    width: 18.75rem;
-    margin-bottom: 1.25rem;
+    width: 25rem;
+    margin-bottom: 2.5rem;
     margin-right: 0;
+  }
+  .bar__pic:before {
+    left: -3.125rem;
+    top: 3.125rem;
+  }
+  .bar__pic:after {
+    bottom: -1.875rem;
+    right: -1.5625rem;
   }
 }
 
@@ -719,7 +787,7 @@ template {
 .bar__price {
   display: flex;
   align-items: center;
-  margin-right: 2.5rem;
+  margin-right: 2.1875rem;
 }
 
 .bar__price-curency-img {
@@ -754,6 +822,11 @@ template {
 .bars {
   background: #f8faf9;
 }
+@media screen and (max-width: 768px) {
+  .bars {
+    min-height: 51rem;
+  }
+}
 
 .bars__container {
   display: flex;
@@ -762,6 +835,17 @@ template {
 }
 
 .bars__list {
+  display: flex;
+}
+
+.bars__window {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bars__area {
+  overflow: hidden;
   display: flex;
 }
 
@@ -1302,7 +1386,7 @@ template {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 55%;
     flex: 0;
   }
 }

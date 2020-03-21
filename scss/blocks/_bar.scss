@@ -2,10 +2,20 @@
   display: flex;
   justify-content: center;
   padding-bottom: rem(60px);
+  width: 85vw;
+
+  @include tablets {
+    width: 100vw;
+  }
+
+  @include phones {
+    width: 96vw;
+  }
 
   @include tablets {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 
@@ -15,11 +25,48 @@
   justify-content: center;
   margin-right: rem(40px);
   width: rem(500px);
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:before {
+    height: rem(92px);
+    width: rem(75px);
+    background-image: url("../images/content/leaves/4.png");
+    left: 0;
+    top: rem(130px)
+  }
+
+  &:after {
+    height: rem(73px);
+    width: rem(99px);
+    background-image: url("../images/content/leaves/5.png");
+    bottom: rem(-5px);
+    right: rem(30px);
+  }
 
   @include tablets {
-    width: rem(300px);
-    margin-bottom: rem(20px);
+    width: rem(400px);
+    margin-bottom: rem(40px);
     margin-right: 0;
+
+    &:before {
+      // background-size: rem(50px) rem(62px);
+      left: rem(-50px);
+      top: rem(50px);
+    }
+
+    &:after {
+      bottom: rem(-30px);
+      right: rem(-25px);
+      // background-size: rem(82px) rem(58px);
+    }
   }
 }
 
@@ -142,7 +189,7 @@
 .bar__price {
   display: flex;
   align-items: center;
-  margin-right: rem(40px);
+  margin-right: rem(35px);
 }
 
 .bar__price-curency-img {

@@ -30,9 +30,15 @@ memberName.forEach(memberName => {
     event.preventDefault()
     const member = memberName.parentElement.parentElement
 
-    member.classList.contains('member--desc-shown') 
-    ? member.classList.remove('member--desc-shown')
-    : member.classList.add('member--desc-shown')
+    if (member.classList.contains('member--desc-shown')) {
+      member.classList.remove('member--desc-shown')
+    } else {
+      const memberDescShown = document.querySelector('.member--desc-shown')
+      if (memberDescShown && !member.isEqualNode(memberDescShown)) {
+        memberDescShown.classList.remove('member--desc-shown') 
+      }
+      member.classList.add('member--desc-shown')
+    }
   })
 })
 

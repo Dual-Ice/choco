@@ -1,5 +1,9 @@
 .bars {
   background: $light_grey; 
+
+  @include tablets {
+    min-height: rem(816px);
+  }
 }
 
 .bars__container {
@@ -9,5 +13,16 @@
 }
 
 .bars__list {
+  display: flex;
+}
+
+.bars__window {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bars__area {
+  overflow: hidden;
   display: flex;
 }
