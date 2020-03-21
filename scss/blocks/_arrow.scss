@@ -1,13 +1,19 @@
 .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: rem(50px);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: rem(50px);
+  position: absolute;
   &--left {
+    left: rem(-25px);
+
     .arrow__img {
       transform: rotate(180deg);
     }
+  }
+
+  &--right {
+    right: rem(-25px);
   }
 }
 

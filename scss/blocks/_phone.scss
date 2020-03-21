@@ -13,7 +13,7 @@
       font-style: normal;
       font-size: rem(21px);
 
-      @include tablets {
+      @include phones {
         justify-content: center;
       }
     }

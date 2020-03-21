@@ -4,8 +4,8 @@
 
 .bars__container {
   display: flex;
-  // justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .bars__list {

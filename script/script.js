@@ -7,12 +7,14 @@ const menuElementTitles = document.querySelectorAll('.menu__element-title')
 
 hamburger.addEventListener('click', (event) => {
   event.preventDefault()
-  nav.classList.add('nav--hamburger-visible') 
+  nav.classList.add('nav--hamburger-visible')
+  document.body.classList.add('body--menu-openned')
 })
 
 hamburgerClose.addEventListener('click', (event) => {
   event.preventDefault()
   nav.classList.remove('nav--hamburger-visible') 
+  document.body.classList.remove('body--menu-openned')
 })
 
 heroButton.addEventListener('mouseover', () => {

@@ -12,6 +12,10 @@
   fill: $white;
 }
 
+.hamburger-menu__close {
+  display: none;
+}
+
 .hamburger-menu__close-icon {
   fill: $white;
   height: rem(20px);
