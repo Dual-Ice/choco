@@ -57,7 +57,6 @@
     margin-right: 0;
 
     &:before {
-      // background-size: rem(50px) rem(62px);
       left: rem(-50px);
       top: rem(50px);
     }
@@ -65,7 +64,6 @@
     &:after {
       bottom: rem(-30px);
       right: rem(-25px);
-      // background-size: rem(82px) rem(58px);
     }
   }
 }
