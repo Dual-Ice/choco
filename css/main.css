@@ -602,7 +602,6 @@ template {
   display: flex;
   justify-content: center;
   padding-bottom: 3.75rem;
-  width: 85vw;
 }
 @media screen and (max-width: 768px) {
   .bar {
@@ -835,17 +834,6 @@ template {
 }
 
 .bars__list {
-  display: flex;
-}
-
-.bars__window {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.bars__area {
-  overflow: hidden;
   display: flex;
 }
 
