@@ -85,6 +85,7 @@
   &:hover {
     .bar__composition-block {
       display: block;
+      opacity: .95;
     }
   }
 
@@ -122,7 +123,8 @@
   top: 0;
   left: rem(90px);
   background-color: $white;
-  opacity: .95;
+  opacity: 0;
+  transition: .3s opacity;
   padding: rem(25px) rem(20px) rem(25px) rem(33px);
   border: rem(1px) solid #eee;
   border-radius: 5px;
@@ -209,7 +211,6 @@
   &:hover {
     .btn--green {
       background-color: #2e4e3f;
-      transition: .3;
     }
   }
 }

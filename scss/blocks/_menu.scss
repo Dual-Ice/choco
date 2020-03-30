@@ -50,6 +50,7 @@
 
   &--openned {
     .menu__element-desc {
+      opacity: .95;
       width: rem(530px);
 
       @include tablets {
@@ -87,10 +88,13 @@
 
 .menu__element-desc {
   background: #333537;
-  opacity: .95;
+  opacity: 0;
   width: 0;
   overflow: hidden;
   position: relative;
+  transition: .5s width;
+  transition-delay: .3s;
+  transition-property: opacity;
 }
 
 .menu__element-close-icon {

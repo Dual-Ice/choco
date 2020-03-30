@@ -682,6 +682,7 @@ template {
 }
 .bar__composition:hover .bar__composition-block {
   display: block;
+  opacity: 0.95;
 }
 @media screen and (max-width: 768px) {
   .bar__composition {
@@ -718,7 +719,8 @@ template {
   top: 0;
   left: 5.625rem;
   background-color: #fff;
-  opacity: 0.95;
+  opacity: 0;
+  transition: 0.3s opacity;
   padding: 1.5625rem 1.25rem 1.5625rem 2.0625rem;
   border: 0.0625rem solid #eee;
   border-radius: 5px;
@@ -805,7 +807,6 @@ template {
 
 .bar__order-button:hover .btn--green {
   background-color: #2e4e3f;
-  transition: 0.3;
 }
 
 .bars {
@@ -906,6 +907,7 @@ template {
   display: inline-block;
   border: none;
   cursor: pointer;
+  transition: 0.3s background;
 }
 .btn--green {
   background: #365a49;
@@ -1500,6 +1502,7 @@ template {
   position: absolute;
   left: 0;
   top: 100%;
+  transition: 0.3s height;
 }
 
 .member__post {
@@ -1580,6 +1583,7 @@ template {
   opacity: 0.9;
 }
 .menu__element--openned .menu__element-desc {
+  opacity: 0.95;
   width: 33.125rem;
 }
 @media screen and (max-width: 768px) {
@@ -1618,10 +1622,13 @@ template {
 
 .menu__element-desc {
   background: #333537;
-  opacity: 0.95;
+  opacity: 0;
   width: 0;
   overflow: hidden;
   position: relative;
+  transition: 0.5s width;
+  transition-delay: 0.3s;
+  transition-property: opacity;
 }
 
 .menu__element-close-icon {
@@ -2069,6 +2076,7 @@ template {
   width: 1.25rem;
   height: 1.25rem;
   fill: #B3B3B3;
+  transition: 0.3s fill;
 }
 
 .socials__list {
