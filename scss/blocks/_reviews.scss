@@ -30,6 +30,7 @@
   height: rem(68px);
   border-radius: 50%;
   overflow: hidden;
+  display: block;
 }
 
 .reviews__item-img {
@@ -42,4 +43,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.reviews__item-details {
+  display: none;
 }

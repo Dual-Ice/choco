@@ -38,6 +38,10 @@
     }
 
     @include tablets {
+      .member__wrap {
+        position: initial;
+      }
+
       .member__name {
         &:after {
           border-bottom: rem(6px) solid $green;
@@ -51,6 +55,9 @@
 
       .member__desc {
         margin-bottom: rem(10px);
+        position: initial;
+        top: initial;
+        left: initial;
       }
     }
   }
@@ -60,6 +67,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .member__name {
@@ -96,6 +104,9 @@
   text-align: center;
   font-size: rem(18px);
   overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
 
 .member__post {

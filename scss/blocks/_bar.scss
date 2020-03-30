@@ -1,16 +1,7 @@
 .bar {
   display: flex;
   justify-content: center;
-  padding-bottom: rem(60px);
-  // width: 85vw;
-
-  @include tablets {
-    width: 100vw;
-  }
-
-  @include phones {
-    width: 96vw;
-  }
+  padding-bottom: rem(60px);  
 
   @include tablets {
     flex-direction: column;
