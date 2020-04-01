@@ -1,5 +1,5 @@
 .features {
-  background: url("../images/content/bg/feature_leaf.png") left 55% no-repeat;
+  background: url("./images/content/bg/feature_leaf.png") left 55% no-repeat;
   position: relative;
 
   @include tablets {
@@ -8,7 +8,7 @@
 
   &:after {
     content: "";
-    background: url("../images/content/berries/3.png") no-repeat;
+    background: url("./images/content/berries/3.png") no-repeat;
     height: rem(315px);
     width: rem(161px);
     position: absolute;

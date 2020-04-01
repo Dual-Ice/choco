@@ -2,6 +2,7 @@ const { src, dest, task, series, watch, parallel } = require("gulp");
 const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS} = require('./gulp.config');
 const env = process.env.NODE_ENV;
 const gulpif = require('gulp-if');
+const ghPages = require('gulp-gh-pages')
 
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
@@ -102,6 +103,11 @@ task('server', () => {
      open: false
  });
 });
+
+task('pages', () => {
+  return src("./dist/**/*")
+    .pipe(ghPages())
+})
 
 task('watch', () => {
   watch(`./${SRC_PATH}/scss/**/*.scss`, series('styles'));

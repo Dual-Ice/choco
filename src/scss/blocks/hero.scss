@@ -1,5 +1,5 @@
 .hero {
-  background: $blue url(../images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
+  background: $blue url(./images/content/bg/hero_leaf.png) right bottom/contain no-repeat;
   color: $white;
   justify-content: flex-start;
 
@@ -27,7 +27,7 @@
 
   &:after {
     content: "";
-    background: url("../images/content/leaves/1.png") no-repeat;
+    background: url("./images/content/leaves/1.png") no-repeat;
     height: rem(112px);
     width: rem(59px);
     position: absolute;
@@ -37,7 +37,7 @@
 
   &:before {
     content: "";
-    background: url("../images/content/berries/10.png") no-repeat;
+    background: url("./images/content/berries/10.png") no-repeat;
     height: rem(122px);
     width: rem(342px);
     position: absolute;

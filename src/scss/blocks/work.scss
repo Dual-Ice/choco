@@ -1,10 +1,10 @@
 .work {
-  background: $light_grey url("../images/content/work/work-bg.png") center center no-repeat;
+  background: $light_grey url("./images/content/work/work-bg.png") center center no-repeat;
   position: relative;
 
   &:before {
     content: "";
-    background: url("../images/content/berries/11.png") no-repeat;
+    background: url("./images/content/berries/11.png") no-repeat;
     background-size: cover;
     height: rem(321px);
     width: rem(150px);
@@ -21,7 +21,7 @@
 
   &:after {
     content: "";
-    background: url("../images/content/leaves/9.png") no-repeat;
+    background: url("./images/content/leaves/9.png") no-repeat;
     height: rem(264px);
     width: rem(242px);
     position: absolute;

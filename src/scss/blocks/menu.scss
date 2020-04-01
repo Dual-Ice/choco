@@ -1,5 +1,5 @@
 .menu {
-  background: $black url("../images/content/menu/menu-bg.png") center center / cover no-repeat;
+  background: $black url("./images/content/menu/menu-bg.png") center center / cover no-repeat;
   color: $white;
   position: relative;
   justify-content: flex-end;
@@ -7,7 +7,7 @@
 
   &:before {
     content: "";
-    background: url("../images/content/berries/5.png") no-repeat;
+    background: url("./images/content/berries/5.png") no-repeat;
     height: rem(114px);
     width: rem(104px);
     position: absolute;
@@ -46,7 +46,7 @@
   @each $bg in $bg_list {
     &--#{$bg} { 
       .menu__element-title {
-        background: #000 url('../images/content/menu/#{$bg}.png') center center /cover no-repeat; 
+        background: #000 url('./images/content/menu/#{$bg}.png') center center /cover no-repeat; 
         opacity: 0.9;
       }
     }

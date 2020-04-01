@@ -1,5 +1,5 @@
 .order {
-  background: #d2ddd9 url("../images/content/bg/order_pattern.png") center center / cover no-repeat;
+  background: #d2ddd9 url("./images/content/bg/order_pattern.png") center center / cover no-repeat;
 }
 
 .order__title {
@@ -11,7 +11,7 @@
 
   &:before {
     content: "";
-    background: url("../images/content/berries/8.png") no-repeat;
+    background: url("./images/content/berries/8.png") no-repeat;
     height: rem(48px);
     width: rem(47px);
     position: absolute;
@@ -21,7 +21,7 @@
 
   &:after {
     content: "";
-    background: url("../images/content/leaves/10.png") no-repeat;
+    background: url("./images/content/leaves/10.png") no-repeat;
     height: rem(188px);
     width: rem(135px);
     position: absolute;
