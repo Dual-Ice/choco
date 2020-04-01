@@ -1,0 +1,39 @@
+.work {
+  background: $light_grey url("../images/content/work/work-bg.png") center center no-repeat;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url("../images/content/berries/11.png") no-repeat;
+    background-size: cover;
+    height: rem(321px);
+    width: rem(150px);
+    position: absolute;
+    top: rem(-160px);
+    left: 0;
+
+    @include tablets {
+      width: rem(140px);
+      height: rem(317px);
+      background-size: rem(140px) rem(317px);
+    }
+  }
+
+  &:after {
+    content: "";
+    background: url("../images/content/leaves/9.png") no-repeat;
+    height: rem(264px);
+    width: rem(242px);
+    position: absolute;
+    bottom: rem(-105px);
+    right: rem(-50px);
+
+    @include tablets {
+      height: rem(148px);
+      width: rem(136px);
+      background-size: rem(136px) rem(148px);
+      bottom: rem(-65px);
+      right: rem(-30px);
+    }
+  }
+}

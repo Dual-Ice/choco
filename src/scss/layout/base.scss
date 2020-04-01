@@ -1,0 +1,83 @@
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: rem(16px);
+  line-height: 1.42;
+  font-family: 'alegreya_sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  color: $black;
+}
+
+.body {
+  &--menu-openned {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  // min-width: 940px + 25px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 98%;
+  max-width: rem(940px);
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+.modal {
+  background-color: #333537;
+  opacity: .97;
+}
+
+.modal__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  background-color: $white;
+  width: rem(300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(30px);
+}
+
+.modal__content-text {
+  margin-bottom: rem(20px);
+  font-weight: 400;
+  font-size: rem(18px);
+  text-align: center;
+}

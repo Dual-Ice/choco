@@ -1,0 +1,50 @@
+.team {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url("../images/content/leaves/11.png") no-repeat;
+    background-size: cover;
+    height: rem(453px);
+    width: rem(196px);
+    position: absolute;
+    top: rem(-240px);
+    right: 0;
+
+    @include tablets {
+      width: rem(157px);
+      height: rem(362px);
+      background-size: 80% 80%;
+      top: rem(-200px);
+      top: rem(-140px);
+      right: rem(-30px);
+    }
+  }
+}
+
+.team__title {
+  margin-bottom: rem(50px);
+}
+
+.team__akkordeon {
+  display: flex;
+  justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__akkordeon-item {
+  width: rem(221px); 
+  margin-right: rem(20px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+  }
+}

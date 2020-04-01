@@ -1,0 +1,17 @@
+.benefits {
+  @include tablets {
+    display: none;
+  }
+}
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits__item {
+  margin-right: rem(15px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

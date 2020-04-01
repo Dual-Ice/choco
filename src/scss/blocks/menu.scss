@@ -1,0 +1,120 @@
+.menu {
+  background: $black url("../images/content/menu/menu-bg.png") center center / cover no-repeat;
+  color: $white;
+  position: relative;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  &:before {
+    content: "";
+    background: url("../images/content/berries/5.png") no-repeat;
+    height: rem(114px);
+    width: rem(104px);
+    position: absolute;
+    top: rem(-70px);
+    left: rem(35px);
+
+    @include tablets {
+      background-size: cover;
+      width: rem(83px);
+      height: rem(90px);
+    }
+  }
+}
+
+.menu__container {
+  
+}
+
+.menu__title {
+  position: absolute;
+  top: 13%;
+  left: 7%;
+}
+
+.menu__akkordeon {
+  display: flex;
+}
+
+.menu__akkordeon-item {
+  display: flex;
+}
+
+.menu__element {
+  $bg_list: 'milk', 'honey', 'berries';
+
+  @each $bg in $bg_list {
+    &--#{$bg} { 
+      .menu__element-title {
+        background: #000 url('../images/content/menu/#{$bg}.png') center center /cover no-repeat; 
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &--openned {
+    .menu__element-desc {
+      opacity: .95;
+      width: rem(530px);
+
+      @include tablets {
+        width: 100%;
+      }
+    }
+
+    @include phones {
+      width: 100%;
+    }
+  }
+}
+
+.menu__element-title {
+  width: rem(100px);
+  position: relative;
+  flex-shrink: 0;
+
+  @include tablets {
+    width: rem(80px);
+  }
+}
+
+.menu__element-title-text {
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  font-size: rem(48px);
+  font-weight: 700;
+  left: 50%;
+  top: 94%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.menu__element-desc {
+  background: #333537;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  position: relative;
+  transition: .5s width;
+  transition-delay: .3s;
+  transition-property: opacity;
+}
+
+.menu__element-close-icon {
+  fill: $white;
+  width: rem(20px);
+  height: rem(20px);
+  position: absolute;
+  top: 4%;
+  right: 6%;
+}
+
+.menu__element-text {
+  padding: rem(47px) rem(60px) 0 rem(30px);
+  line-height: rem(24px);
+
+  @include phones {
+    padding: rem(60px) rem(15px) 0 rem(15px);
+  }
+}

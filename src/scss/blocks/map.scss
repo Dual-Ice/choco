@@ -1,0 +1,10 @@
+.map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.map__marker {
+  width: rem(46px);
+  height: rem(57px);
+}

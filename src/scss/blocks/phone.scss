@@ -1,0 +1,39 @@
+.phone {
+  @include tablets {
+    display: none;
+  }
+
+  &--footer {
+    @include tablets {
+      display: block;
+    }
+
+    .phone__link {
+      color: $green;
+      font-style: normal;
+      font-size: rem(21px);
+
+      @include phones {
+        justify-content: center;
+      }
+    }
+
+    .phone__icon {
+      fill: $green;
+    }
+  }
+}
+
+.phone__link {
+  display: flex;
+  align-self: center;
+  font-size: rem(24px);
+}
+
+.phone__icon {
+  height: rem(12px);
+  width: rem(12px);
+  fill: $white;
+  align-self: center;
+  margin-right: rem(5px);
+}

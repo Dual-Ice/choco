@@ -1,0 +1,47 @@
+.bars {
+  background: $light_grey; 
+
+  @include tablets {
+    min-height: rem(816px);
+  }
+}
+
+.bars__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bars__list {
+  display: flex;
+  position: relative;
+  transition: right 0.3s;
+  right: 0;
+}
+
+.bars__item {
+  flex-shrink: 0;
+  width: rem(960px);
+
+  @include tablets {
+    width: rem(500px);
+  }
+
+  @include phones {
+    width: rem(480px);
+  }
+}
+
+.bars__area {
+  overflow: hidden;
+  width: rem(960px);
+
+  @include tablets {
+    width: rem(500px);
+  }
+
+  @include phones {
+    width: rem(480px);
+  }
+}

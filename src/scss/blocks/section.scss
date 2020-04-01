@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: rem(650px);
+
+  @include tablets {
+    min-height: rem(1000px);
+  }
+
+  @include phones {
+    min-height: rem(800px);
+  }
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: 700;
+  margin-bottom: rem(10px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--left {
+    text-align: left;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  @include tablets {
+    text-align: center;
+  }
+}
