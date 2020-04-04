@@ -72,7 +72,8 @@ svg {
   position: relative;
   width: 100%;
   // min-width: 940px + 25px;
-  min-height: 100vh;
+  // min-height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -80,4 +81,9 @@ svg {
   width: 98%;
   max-width: rem(940px);
   margin: 0 auto;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
 }

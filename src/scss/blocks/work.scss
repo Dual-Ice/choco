@@ -37,3 +37,18 @@
     }
   }
 }
+
+.work__container {
+  width: rem(660px);
+  height: rem(405px);
+
+  @include tablets {
+    width: rem(597px);
+    height: rem(364px);
+  }
+
+  @include phones {
+    width: rem(397px);
+    height: rem(245px);
+  }
+}
