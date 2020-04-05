@@ -166,14 +166,22 @@
   
       <section class="section bars">
         <div class="container bars__container">
-          <a href="#" class="arrow arrow--left">
-            <svg class="arrow__img">
-              <use xlink:href="./images/icons/sprite.svg#arrow" />
-            </svg>
-          </a>
-          <div class="bars__area">
-            <ul class="bars__list">
-                <li class="bars__item bar">
+          <div class="slider">
+            <div class="slider__controls">
+              <a href="#" class="arrow arrow--left">
+                <svg class="arrow__img">
+                  <use xlink:href="./images/icons/sprite.svg#arrow" />
+                </svg>
+              </a>
+              <a href="#" class="arrow arrow--right">
+                <svg class="arrow__img">
+                  <use xlink:href="./images/icons/sprite.svg#arrow" />
+                </svg>
+              </a>
+            </div>
+            <div class="slider__area">
+              <ul class="slider__list bars__list">
+                <li class="slider__item bars__item bar active">
                   <div class="bar__pic">
                     <img src="./images/content/bars/bar_light.png" alt="" class="bar__pic-img">
                   </div>
@@ -275,7 +283,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="bars__item bar">
+                <li class="slider__item bars__item bar">
                   <div class="bar__pic">
                     <img src="./images/content/bars/bar_blue.png" alt="" class="bar__pic-img">
                   </div>
@@ -387,12 +395,8 @@
                   </div>
                 </li>
               </ul>
+            </div>
           </div>
-          <a href="#" class="arrow arrow--right">
-            <svg class="arrow__img">
-              <use xlink:href="./images/icons/sprite.svg#arrow" />
-            </svg>
-          </a>
         </div>
       </section>
   
@@ -520,58 +524,59 @@
   
       <section class="section reviews">
         <h2 class="section__title reviews__title">Отзывы</h2>
-        <div class="review">
-          <div class="container review__container">
-            <div class="review__avatar">
-              <img class="review__avatar-img" src="" alt="фото пользователя">
+        <div class="container reviews__container">
+          <div class="slider">
+            <div class="slider__area">
+              <ul class="slider__list reviews__list">
+                <li class="slider__item reviews__item review active">
+                  <div class="review__container">
+                    <div class="review__avatar">
+                      <img class="review__avatar-img" src="/images/content/reviews/photo1.jpg" alt="фото пользователя">
+                    </div>
+                    <article class="review__details">
+                      <h3 class="review__title">Лучший перекус</h3>
+                      <div class="review__text">
+                        <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>
+                      </div>
+                      <div class="review__user">Алёна Хмельницкая</div>
+                    </article>
+                  </div>
+                </li>
+                <li class="slider__item reviews__item review">
+                  <div class="review__container">
+                    <div class="review__avatar">
+                      <img class="review__avatar-img" src="/images/content/reviews/photo2.jpg" alt="фото пользователя">
+                    </div>
+                    <article class="review__details">
+                      <h3 class="review__title">Идеально подходят для спортсменов</h3>
+                      <div class="review__text">
+                        <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</p>
+                      </div>
+                      <div class="review__user">Вадим Грачев</div>
+                    </article>
+                  </div>
+                </li>
+                <li class="slider__item reviews__item review">
+                  <div class="review__container">
+                    <div class="review__avatar">
+                      <img class="review__avatar-img" src="/images/content/reviews/photo3.jpg" alt="фото пользователя">
+                    </div>
+                    <article class="review__details">
+                      <h3 class="review__title">Лучшие батончики премиум уровня</h3>
+                      <div class="review__text">
+                        <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                      </div>
+                      <div class="review__user">Мария Орлова</div>
+                    </article>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <article class="review__details">
-              <h3 class="review__title"></h3>
-              <div class="review__text">
-                <p></p>
-              </div>
-              <div class="review__user"></div>
-            </article>
+            <ul class="slider__dots">
+            </ul>
           </div>
         </div>
-        <ul class="reviews__list">
-          <li class="reviews__item reviews__item--selected">
-            <a href="#" class="reviews__item-avatar">
-              <img class="reviews__item-img" src="./images/content/reviews/photo1.jpg" alt="">
-            </a>
-            <div class="reviews__item-details">
-              <div class="reviews__item-title">Лучший перекус</div>
-              <div class="reviews__item-text">
-                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>
-              </div>
-              <div class="reviews__item-user">Алёна Хмельницкая</div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <a href="#" class="reviews__item-avatar">
-              <img class="reviews__item-img" src="./images/content/reviews/photo2.jpg" alt="">
-            </a>
-            <div class="reviews__item-details">
-              <div class="reviews__item-title">Идеально подходят для спортсменов</div>
-              <div class="reviews__item-text">
-                <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</p>
-              </div>
-              <div class="reviews__item-user">Вадим Грачев</div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <a href="#" class="reviews__item-avatar">
-              <img class="reviews__item-img" src="./images/content/reviews/photo3.jpg" alt="">
-            </a>
-            <div class="reviews__item-details">
-              <div class="reviews__item-title">Лучшие батонкчики премиум уровня</div>
-              <div class="reviews__item-text">
-                <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
-              </div>
-              <div class="reviews__item-user">Мария Орлова</div>
-            </div>
-          </li>
-        </ul>
+        
       </section>
   
       <section class="section work">
