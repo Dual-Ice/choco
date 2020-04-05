@@ -73,13 +73,23 @@
     height: rem(133px);
     margin-bottom: rem(30px);
   }
+
+  &--circle {
+    width: rem(68px);
+    height: rem(68px);
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-right: 0;
+    
+    @include tablets {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .review__avatar-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.review__details {
 }

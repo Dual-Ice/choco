@@ -15,33 +15,26 @@
 
 .bars__list {
   display: flex;
-  position: relative;
-  transition: right 0.3s;
-  right: 0;
+  width: rem(940px);
+
+  @include tablets {
+    width: rem(580px);
+  }
+
+  @include phones {
+    width: rem(490px);
+  }
 }
 
 .bars__item {
   flex-shrink: 0;
-  width: rem(960px);
+  width: rem(940px);
 
   @include tablets {
-    width: rem(500px);
+    width: rem(580px);
   }
 
   @include phones {
-    width: rem(480px);
-  }
-}
-
-.bars__area {
-  overflow: hidden;
-  width: rem(960px);
-
-  @include tablets {
-    width: rem(500px);
-  }
-
-  @include phones {
-    width: rem(480px);
+    width: rem(490px);
   }
 }

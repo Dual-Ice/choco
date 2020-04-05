@@ -1,14 +1,12 @@
 .arrow {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   &--left {
     left: rem(-25px);
 
-    @include tablets {
-      left: rem(150px);
-    }
-
     @include phones {
-      left: rem(10px);
+      left: rem(-20px);
     }
 
     .arrow__img {
@@ -19,12 +17,8 @@
   &--right {
     right: rem(-25px);
 
-    @include tablets {
-      right: rem(150px);
-    }
-
     @include phones {
-      right: rem(10px);
+      right: rem(-20px);
     }
   }
 

@@ -10,41 +10,29 @@
   margin-bottom: rem(30px);
 }
 
-.reviews__item {
-  margin-right: rem(10px);
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.reviews__item--selected {
-  .reviews__item-avatar {
-    border: rem(6px) solid $green;
-    box-sizing: content-box;
-  }
-}
-
-.reviews__item-avatar {
-  width: rem(68px);
-  height: rem(68px);
-  border-radius: 50%;
-  overflow: hidden;
-  display: block;
-}
-
-.reviews__item-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .reviews__list {
+  display: flex;
+}
+
+.reviews__item {
+  flex-shrink: 0;
+}
+
+.reviews__list,
+.reviews__item {
+  width: rem(940px);
+
+  @include tablets {
+    width: rem(770px);
+  }
+
+  @include phones {
+    width: rem(520px);
+  }
+}
+
+.reviews__container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.reviews__item-details {
-  display: none;
 }

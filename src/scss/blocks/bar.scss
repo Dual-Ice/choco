@@ -140,6 +140,11 @@
 
   @include tablets {
     text-align: center;
+    white-space: nowrap;
+  }
+
+  @include phones {
+    white-space: initial;
   }
 }
 
@@ -149,8 +154,8 @@
 
   @include tablets {
     text-align: center;
-    padding-right: rem(100px);
-    padding-left: rem(100px);
+    padding-right: rem(30px);
+    padding-left: rem(30px);
   }
 
   @include phones {
